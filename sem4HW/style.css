@@ -20,8 +20,8 @@ a {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 96px;
-    width: 1920px;
-    gap: 500px;
+    
+    
 
 }
 .menu_header {
@@ -47,7 +47,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 1920px;
+    
 
 }
 
@@ -104,6 +104,4 @@ a {
     justify-content: space-around;
     align-items: center;
     gap: 48px;
-    width: 1920px;
-
 }
