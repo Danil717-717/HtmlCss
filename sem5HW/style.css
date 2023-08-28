@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
+}
+
+.Backgrund {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.img_back {
+    padding-bottom: 25px;
+}
+
+.Backgrund_h {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 17px;
+}
+
+.Backgrund_p {
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 22.5px */
+    width: 310px;
+    height: 42px;
+    flex-shrink: 0;
+    padding-bottom: 25px;
+}
+
+.Backgrund_s {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 16.5px */
+}
+
+.Rectangle{
+    display: grid;
+    justify-items: center;
+}
+
+.Rectangle_h1{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 19px;
+}
+
+.Rectangle_p1{
+    color: #666;
+text-align: center;
+font-family: Gilroy-Regular;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+padding-bottom: 70px;
+}
+
+.Rectangle_block{
+    display: flex;
+    gap: 30px;
+}
+
+.Rectangle_h {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 22px;
+
+}
+
+.Rectangle_p {
+    color: #AAA;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 22.5px */
+    width: 310px;
+    height: 63px;
+}
+
+.but_rect {
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy-Bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 19.5px */
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;
+    font-size: 14px;
+    border: 1px solid #F25822;
+    border-radius: 30px;
+    background-color: #F25822;
+    margin-top: 39px;
+}
+
+
