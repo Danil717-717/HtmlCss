@@ -189,8 +189,11 @@
 }
 
 .sec3_content {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    -ms-grid-columns: (360px)[auto-fit];
+    grid-template-columns: repeat(3, 360px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
 }
