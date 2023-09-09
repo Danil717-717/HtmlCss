@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.im{
+    width: 150px;
+
+}
+
+.im:hover{
+    fill: purple;
+}
+
+.im:active{
+    fill: orange;
+}

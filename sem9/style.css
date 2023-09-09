@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.menu__list:hover{
+    color: red;
+}
+
+.menu__list:active{
+    color: green;
+}
+
+.menu__list:first-child .menu__link{
+    text-decoration: none;
+}
+
+.menu__list:last-child .menu__link{
+    font-weight: bold;
+}
+
+.menu__list:nth-child(3) .menu__link{
+    background: orange;
+}
