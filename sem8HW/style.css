@@ -122,7 +122,7 @@ img {
 .sec1_img_big {
     width: 386px;
     height: 368px;
-    
+
 }
 
 .sec1_img {
@@ -734,7 +734,7 @@ img {
     .sec2_img1 {
         width: 231.973px;
         height: 167.617px;
-        
+
     }
 
     .sec2_block2 {
@@ -808,9 +808,16 @@ img {
     }
 
     @media(max-width:767px) {
+        
+        
         body {
             width: 100%;
-            overflow-x: hidden
+            overflow-x: hidden;
+
+        }
+
+        img{
+            max-width: 100%;
         }
 
         .ne_pokaz_v_mob {
@@ -847,53 +854,69 @@ img {
             height: 60px;
         }
 
-        .sec2_block1{
-            width:  100%;
+        .sec2_block1 {
+            width: 100%;
             height: 100%;
         }
-        .sec2_img1{
+
+        .sec2_img1 {
             width: 100%;
             height: 100%;
             padding-left: 16px;
             padding-right: 16px;
         }
 
-        .sec2_block2{
-            width:  100%;
+        .sec2_block2 {
+            width: 100%;
             height: 100%;
         }
-        .sec2_img2{
+
+        .sec2_img2 {
             width: 100%;
             height: 100%;
             padding-left: 16px;
             padding-right: 16px;
         }
 
-        .sec2_block3{
-            width:  100%;
+        .sec2_block3 {
+            width: 100%;
             height: 100%;
         }
-        .sec2_img3{
+
+        .sec2_img3 {
             width: 100%;
             height: 100%;
             padding-left: 16px;
             padding-right: 16px;
         }
 
-        .sec2_block4{
-            width:  100%;
+        .sec2_block4 {
+            width: 100%;
             height: 100%;
         }
-        .sec2_img4{
+
+        .sec2_img4 {
             width: 100%;
             height: 111px;
             padding-left: 16px;
             padding-right: 16px;
         }
-        
+
 
         .sec3_content {
+            
             grid-template-columns: repeat(1, 360px);
+        }
+    }
+
+    @media(max-width:370px){
+        body{
+            width: 130vw;
+        }
+        
+        .sec3_content {
+            
+            grid-template-columns: repeat(1, 112vw);
         }
     }
 }
