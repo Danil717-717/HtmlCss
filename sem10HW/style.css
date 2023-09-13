@@ -1085,6 +1085,9 @@ a {
         font-size: 22px;
     }
 
+    .sec2{
+        gap: 20px;
+    }
     .sec2_block1 {
         position: relative;
         text-align: center;
@@ -1248,6 +1251,7 @@ a {
             height: 60px;
         }
 
+        
         .sec2_block1 {
             width: 100%;
             height: 100%;
