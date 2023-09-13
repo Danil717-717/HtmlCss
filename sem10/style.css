@@ -1,0 +1,14 @@
+.scrol {
+    position: relative;
+}
+
+.nav_top {
+    display: flex;
+    justify-content: flex-end !important; 
+}
+
+@media(max-width: 1024px){
+    .nav-item{
+        text-align: right;
+    }
+}
