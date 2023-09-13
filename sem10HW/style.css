@@ -109,7 +109,7 @@ a {
     padding: 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}   
+}
 
 
 .mobile_menu_link {
@@ -791,7 +791,8 @@ a {
     font-weight: 300;
     line-height: normal;
 
-    max-width: 360px;
+    max-width: 320px;
+    gap: 30px;
 }
 
 .sec4_svg_bl1 {
@@ -826,6 +827,18 @@ a {
     height: 448px;
 
     background: rgba(244, 244, 244, 0.70);
+}
+
+.sec5_fon{
+    position: relative;
+}
+.sec5_content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 223px;
 }
 
 .sec5_img {
@@ -971,6 +984,10 @@ a {
     fill: #F16D7F;
 
 }
+.sec6_ss:hover .sec6_fac_icon {
+    fill: white;
+}
+
 
 .sec6_fac_icon {
     position: absolute;
@@ -981,7 +998,9 @@ a {
     color: #000;
 }
 
-
+.sec6_fac_svg:hover .sec6_fac_icon {
+    fill: white
+}
 
 
 .sec6_inst {
@@ -996,6 +1015,9 @@ a {
     fill: #F16D7F;
 }
 
+.sec6_inst_ss:hover .sec6_inst_ico {
+    fill: white;
+}
 .sec6_inst_ico {
     position: absolute;
     top: 0;
@@ -1017,6 +1039,10 @@ a {
     fill: #000;
 }
 
+.sec6_pint_ss:hover .sec6_pint_icon {
+    fill: white;
+}
+
 .sec6_twit {
     position: relative;
 }
@@ -1027,6 +1053,9 @@ a {
     left: 0;
     transform: translate(50%, 50%);
     fill: #000;
+}
+.sec6_twit_ss:hover .sec6_twit_icon {
+    fill: white;
 }
 
 
@@ -1284,8 +1313,8 @@ svg path {
     padding: 20px;
 }
 
-.reg_pole:hover{    
-    background-color: wheat;    
+.reg_pole:hover {
+    background-color: wheat;
 }
 
 .reg_pole2 {
@@ -1314,6 +1343,7 @@ svg path {
     border-radius: 20px;
     padding: 20px;
 }
+
 .reg_pole5 {
     width: 175px;
     height: 40px;
