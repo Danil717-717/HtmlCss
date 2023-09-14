@@ -1434,7 +1434,7 @@ svg path {
     }
 
     .sec3_content {
-        
+
         grid-template-columns: repeat(2, 360px);
     }
 }
@@ -1767,7 +1767,41 @@ svg path {
             align-items: center;
             justify-content: space-evenly;
         }
+
+        .pr_sec1_breadcrumb {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .pr_sec1_breadcrumb_box-link:last-child .pr_sec1_breadcrumb_link {
+            font-weight: 700;
+            color: #F16D7F;
+            font-size: 15px;
+        }
+        .pr_sec1_title {
+            
+            font-size: 20px;
+            max-width: 130px;
+        }
+        .pr_sec1_breadcrumb_link {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 17px;
+            color: #636363;
+        }
+
+        .sec2_reg {
+
+            padding: 134px;
+        }
     }
+    @media(max-width: 710px){
+        .pr_sec3_content_text {
+            max-width: 300px;
+        }
+    }
+        
+    
 
     @media(max-width:370px) {
         body {
