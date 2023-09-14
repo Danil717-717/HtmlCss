@@ -1412,7 +1412,7 @@ svg path {
 
 
 
-@media(max-width:1140px) {
+@media(max-width:1150px) {
     .sec2_block1 {
         width: 300px;
         height: 200px;
@@ -1433,6 +1433,10 @@ svg path {
         height: 180px;
     }
 
+    .sec3_content {
+        
+        grid-template-columns: repeat(2, 360px);
+    }
 }
 
 @media(max-width:1024px) {
