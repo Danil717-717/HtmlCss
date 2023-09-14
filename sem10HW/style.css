@@ -820,25 +820,31 @@ a {
 }
 
 .sec5 {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    height: 448px;
+    min-height: 448px;
 
     background: rgba(244, 244, 244, 0.70);
 }
 
-.sec5_fon{
-    position: relative;
-}
-.sec5_content{
+
+
+.sec5_content {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 223px;
+}
+
+.sec5_fon_img {
+    filter: opacity(30%);
+    min-width: 1600px;
+    min-height: 448px;
 }
 
 .sec5_img {
@@ -984,6 +990,7 @@ a {
     fill: #F16D7F;
 
 }
+
 .sec6_ss:hover .sec6_fac_icon {
     fill: white;
 }
@@ -1018,6 +1025,7 @@ a {
 .sec6_inst_ss:hover .sec6_inst_ico {
     fill: white;
 }
+
 .sec6_inst_ico {
     position: absolute;
     top: 0;
@@ -1054,6 +1062,7 @@ a {
     transform: translate(50%, 50%);
     fill: #000;
 }
+
 .sec6_twit_ss:hover .sec6_twit_icon {
     fill: white;
 }
@@ -1403,6 +1412,28 @@ svg path {
 
 
 
+@media(max-width:1140px) {
+    .sec2_block1 {
+        width: 300px;
+        height: 200px;
+    }
+
+    .sec2_block2 {
+        width: 300px;
+        height: 200px;
+    }
+
+    .sec2_block3 {
+        width: 300px;
+        height: 200px;
+    }
+
+    .sec2_block4 {
+        width: 963px;
+        height: 180px;
+    }
+
+}
 
 @media(max-width:1024px) {
     .sec1_header {
@@ -1580,6 +1611,31 @@ svg path {
         justify-content: space-evenly;
     }
 
+    .sec5_content {
+        gap: 88px;
+    }
+
+    .sec5_fon {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec5_fon_img {
+
+        min-height: 100%;
+
+
+    }
+
+    @media(max-width:803px) {
+        .sec5_content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     @media(max-width:767px) {
 
 
@@ -1692,6 +1748,11 @@ svg path {
 
         .sec5 {
             height: 550px;
+        }
+
+        .sec5_content {
+            display: block;
+            flex-direction: column;
         }
 
         .sec6 {
