@@ -753,6 +753,96 @@ li::marker {
     padding-top: 1235px;
 }
 
+.movingCommon_block_block {
+    padding-top: 249px;
+}
+
+.movingCommon_block2_block {
+    padding-top: 790px;
+}
+
+.movingFigCommon_block_otstup {
+    width: 300px;
+    height: 50px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.movingFigCommon_block1_big {
+    width: 600px;
+    height: 148px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.movingFigCommon_block {
+    display: flex;
+    flex-direction: column;
+    gap: 99px;
+}
+
+.movingFigCommon_block_strelka {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-top: 569px;
+}
+
+.movingFigCommon_block2_big {
+    width: 600px;
+    height: 300px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.movingFigCommon_block3_big {
+    width: 600px;
+    height: 840px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.movingFigCommon_block4_big {
+    width: 600px;
+    height: 670px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
 
 
 @media(max-width:940px) {
@@ -820,7 +910,21 @@ li::marker {
         width: 180px;
     }
     
-
+    .movingFigCommon_block_otstup{
+        width: 152px;
+    }
+    .movingFigCommon_block1_big{
+        width: 490px;
+    }
+    .movingFigCommon_block2_big{
+        width: 490px;
+    }
+    .movingFigCommon_block3_big{
+        width: 490px;
+    }
+    .movingFigCommon_block4_big{
+        width: 490px;
+    }
 }
 
 @media(max-width:790px) {
@@ -865,6 +969,8 @@ li::marker {
     .movingFigBricks_block2_big {
         width: 435px;        
     }
+
+    
 }
 
 @media(max-width:690px) {
@@ -983,6 +1089,26 @@ li::marker {
     .movingFig_block_otstup {
         width: 100px;
     }
+
+    .movingFigCommon_block_otstup {
+        width: 80px;
+    }
+    .factory_block_strelka{
+        width: 80px;
+    }
+
+    .movingFigCommon_block1_big{
+        width: 285px;
+    }
+    .movingFigCommon_block2_big{
+        width: 285px;
+    }
+    .movingFigCommon_block3_big{
+        width: 285px;
+    }
+    .movingFigCommon_block4_big{
+        width: 285px;
+    }
 }
 
 @media(max-width:570px) {
@@ -1018,7 +1144,7 @@ li::marker {
         width: 63px;
     }
     .movingFig_block_strelka{
-        width: 65px;
+        width: 64px;
     }
 
     .movingFigBricks_block1_big {
@@ -1044,7 +1170,7 @@ li::marker {
     }
 }
 
-@media(max-width:350px) {
+@media(max-width:400px) {
     .factory_block {
         width: 70px;
     }
@@ -1058,7 +1184,7 @@ li::marker {
     }
 
     .factory_block_strelka {
-        width: 70px;
+        width: 55px;
     }
 
     .factoryClasses_block1_big {
@@ -1100,5 +1226,22 @@ li::marker {
     }
     .factoryGener_block_otstup {
         width: 90px;
+    }
+
+    .movingFigCommon_block1_big{
+        width: 270px;
+        padding-left: 1px;
+    }
+    .movingFigCommon_block2_big{
+        width: 270px;
+        padding-left: 1px;
+    }
+    .movingFigCommon_block3_big{
+        width: 270px;
+        padding-left: 1px;
+    }
+    .movingFigCommon_block4_big{
+        width: 270px;
+        padding-left: 1px;
     }
 }

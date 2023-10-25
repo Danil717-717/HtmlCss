@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovingFiguresCommon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_link">
+            <a href="Index.html">Обо мне</a>
+            <a href="Portfol.html">Портфолио</a>
+        </div>
+        <h1 class="header_title">Java Developer</h1>
+        <div class="header_img">
+            <img class="header_img" src="./img/java-svgrepo-com.svg" alt="img">
+        </div>
+    </header>
+    <section class="sec">
+        <div class="factory_content">
+            <div class="movFig_bl">
+                <div class="movingFigCommon_block">
+                    <div class="movingFigCommon_block_otstup">
+                        <h3 class="factory_bl_title">CanvasRepListen</h3>
+                    </div>
+                    <div class="movingFigCommon_block_otstup">
+                        <h3 class="factory_bl_title">Interactable</h3>
+                    </div>
+                    
+                </div>
+                <div class="movingCommon_block_block">
+                    <div class="movingFigCommon_block_otstup">
+                        <h3 class="factory_bl_title">MainCanvas</h3>
+                    </div>
+                </div>
+                <div class="movingCommon_block2_block">
+                    <div class="movingFigCommon_block_otstup">
+                        <h3 class="factory_bl_title">Sprite</h3>
+                    </div>
+                </div>  
+                <div class="movingFigCommon_block_strelka">
+                    <div class="factory_block_strelka">
+                        <a href="MovingFigures.html"><img class="strelka"
+                                src="./img/iconmonstr-caret-left-circle-lined.svg" alt="hj"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="factoryClasses_block">
+                <div class="movingFigCommon_block1_big">
+                    <pre class="preGener">
+package common;
+
+import java.awt.*;
+                        
+public interface CanvasRepaintListener {
+    void onDrawFrame(MainCanvas canvas, 
+                                    Graphics g ,float deltaTime);
+}
+                    </pre>
+                </div>
+                <div class="movingFigCommon_block2_big">
+                    <pre class="preGener">
+
+package common;
+
+import java.awt.*;
+                        
+/*
+ Интерфейс помогает решить проблему единообразия
+ поведения спрайтов и фона, при их различии в
+ свойствах.
+ То есть, сложилась ситуация в которой существует
+ необходимость хранить в одном массиве объекты со 
+ схожим поведением, но наследовать их друг от друга 
+ не совсем логично
+*/
+public interface Interactable {
+    void update(MainCanvas canvas, float deltaTime);
+    void render(MainCanvas canvas, Graphics g);
+}
+                    </pre>
+                </div>
+                <div class="movingFigCommon_block3_big">
+                    <pre class="preGener">
+package common;
+
+import circles.Background;
+                        
+import javax.swing.*;
+import java.awt.*;
+                        
+                        
+//Делаем MainCanvas универсальным методом для рисования
+public class MainCanvas extends JPanel {
+                        
+    // для того чтобы Canva знала от куда брать обьекты
+    // создадим поле класса интерфейса
+    private final CanvasRepaintListener controller;
+                        
+    private long lastFrameTime;
+                        
+    //передаем это поле в конструктор
+    public MainCanvas(CanvasRepaintListener controller){                        
+        this.controller = controller;
+        lastFrameTime = System.nanoTime();
+    }
+                        
+                        
+    //переопределяем метод с незначительными изменениями
+    @Override
+     protected void paintComponent(Graphics g){
+        super.paintComponent(g);
+                        
+        //и обновлять
+        //repaint(); этот вариант нагрузит систему
+        //делаем так - многопоточность
+        try {
+            Thread.sleep(16); //спит 16 милисек
+        }catch (InterruptedException e){
+            throw new RuntimeException(e);
+        }
+        //меняем милисек в секунды
+        float deltaTime = (System.nanoTime() - lastFrameTime)
+                                                 * 0.000000001f;
+        // и вызываем метод который будет перерисовывать
+        controller.onDrawFrame(this, g, deltaTime);
+        lastFrameTime = System.nanoTime();
+                        
+                        
+        repaint();
+    }
+                        
+    //добавляем методы возвращающие границы окна
+    public int getLeft(){return 0;}
+    public int getRight(){return getWidth() - 1;}
+    public int getTop(){return 0;}
+    public int getButtom(){return getHeight() - 1;}
+}
+                    </pre>
+                </div>
+                <div class="movingFigCommon_block4_big">
+                    <pre class="preGener">
+
+package common;
+
+import common.Interactable;
+import common.MainCanvas;
+                        
+import java.awt.*;
+                        
+/*
+Класс Sprite описывает общие для всех рисуемых
+объектов в программе поведение и свойства
+ */
+public abstract class Sprite implements Interactable {
+    // необходимо условиться, что X и Y –
+    // это центр любого визуального объекта на канве
+    // И, следовательно, удобно хранить
+    // не длину с шириной, а половину длины и 
+    // половину ширины. А границы объекта,
+    // соответственно, будут 
+    // отдаваться через геттеры и сеттеры
+    protected float x;
+    protected float y;
+    protected float halfWidth;
+    protected float halfHeight;
+                        
+    protected float getLeft(){return x - halfWidth;}
+    public void setLeft(float left) {x = left + halfWidth;}
+                        
+    public float getRight() {return x + halfWidth;}
+    public void setRight(float right) { x = right - halfWidth;}
+                        
+    public float getTop() {return y - halfHeight;}
+    public void setTop(float top) { y = top + halfHeight;}
+                        
+    public float getBottom() {return y + halfHeight;}
+    public void setBottom(float bottom) { y = bottom - halfHeight;}
+                        
+    protected float getWidth(){ return 2f * halfWidth;}
+    protected float getHeight(){ return 2f * halfHeight;}
+                        
+    public void update(MainCanvas canvas, float deltaTime){}
+    public void render(MainCanvas canvas, Graphics g){}     
+                        
+}
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
