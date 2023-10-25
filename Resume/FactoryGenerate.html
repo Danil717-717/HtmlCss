@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactoryGenerate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_link">
+            <a href="Index.html">Обо мне</a>
+            <a href="Portfol.html">Портфолио</a>
+        </div>
+        <h1 class="header_title">Java Developer</h1>
+        <div class="header_img">
+            <img class="header_img" src="./img/java-svgrepo-com.svg" alt="img">
+        </div>
+    </header>
+    <section class="sec">
+        <div class="factory_content">
+            <div class="factoryGener_bl">
+                <div class="factoryGener_block_otstup">
+                    <h3 class="factory_bl_title">BodyArmorGenerator</h3>         
+                </div>
+                <div class="factoryGener_block_otstup">
+                    <h3 class="factory_bl_title">DiamondGenerator</h3>
+                </div>
+                <div class="factoryGener_block_otstup">
+                    <h3 class="factory_bl_title">ExplosionGenerator</h3>
+                </div>
+                <div class="factoryGener_block_otstup">
+                    <h3 class="factory_bl_title">GemGenerator</h3>
+                </div>
+                <div class="factoryGener_block_otstup">
+                    <h3 class="factory_bl_title">GoldGenerator</h3>
+                </div>
+                <div class="factoryGener_block_otstup">
+                    <h3 class="factory_bl_title">SilverGenerator</h3>
+                </div>
+                <div class="factoryGener_block_otstup">
+                    <h3 class="factory_bl_title">StillLifeGenerator</h3>
+                </div>
+                <div class="factory_block_block_strelka">
+                    <div class="factory_block_strelka">
+                        <a href="FactoryRevards.html"><img class="strelka" src="./img/iconmonstr-caret-left-circle-lined.svg" alt="hj"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="factoryClasses_block">
+                <div class="factoryGener_block_big">
+                    <pre class="preGener">
+package Classes.Rewards.Gener;
+
+import Classes.ItemFabrica;
+import Classes.iGameItem;
+import Classes.Rewards.Reward.RBodyArmorReward;
+                        
+public class BodyArmorGenerator extends ItemFabrica{
+                        
+    @Override
+    public iGameItem createItem() {
+        return new BodyArmorReward();
+    }
+                            
+}
+                    </pre>
+                </div>
+                <div class="factoryGener_block_big">
+                    <pre class="preGener">
+package Classes.Rewards.Gener;
+
+import Classes.ItemFabrica;
+import Classes.iGameItem;
+import Classes.Rewards.Reward.RDiamondReward;
+                        
+public class DiamondGenerator extends ItemFabrica{
+                        
+    @Override
+    public iGameItem createItem() {
+        retur new DiamondReward();
+    }
+                            
+}
+                    </pre>
+                </div>
+                <div class="factoryGener_block_big">
+                    <pre class="preGener">
+package Classes.Rewards.Gener;
+
+import Classes.ItemFabrica;
+import Classes.iGameItem;
+import Classes.Rewards.Reward.RExplosionReward;
+                        
+public class ExplosionGenerator extends ItemFabrica{
+                        
+    @Override
+    public iGameItem createItem() {
+        return new ExplosionReward();
+    }
+                            
+}
+                    </pre>
+                </div>
+                <div class="factoryGener_block_big">
+                    <pre class="preGener">
+package Classes.Rewards.Gener;
+
+import Classes.ItemFabrica;
+import Classes.iGameItem;
+import Classes.Rewards.Reward.GemReward;
+                        
+public class GemGenerator extends ItemFabrica{
+    @Override
+    public iGameItem createItem() {
+        return new GemReward();
+    }
+}
+                    </pre>
+                </div>
+                <div class="factoryGener_block_big">
+                    <pre class="preGener">
+package Classes.Rewards.Gener;
+
+import Classes.ItemFabrica;
+import Classes.iGameItem;
+import Classes.Rewards.Reward.GoldReward;
+                        
+public class GoldGenerator extends ItemFabrica{
+                        
+    @Override
+    public iGameItem createItem() {
+        return new GoldReward();
+    }
+                            
+}
+                    </pre>
+                </div>
+                <div class="factoryGener_block_big">
+                    <pre class="preGener">
+package Classes.Rewards.Gener;
+
+import Classes.ItemFabrica;
+import Classes.iGameItem;
+import Classes.Rewards.Reward.SilverReward;
+                        
+public class SilverGenerator extends ItemFabrica{
+                        
+    @Override
+    public iGameItem createItem() {
+        return new SilverReward();
+    }
+                            
+}
+                    </pre>
+                </div>
+                <div class="factoryGener_block_big_strelka">
+                    <pre class="preGener">
+package Classes.Rewards.Gener;
+
+import Classes.ItemFabrica;
+import Classes.iGameItem;
+import Classes.Rewards.Reward.StillLifeReward;
+                        
+public class StillLifeGenerator extends ItemFabrica{
+                        
+    @Override
+    public iGameItem createItem() {
+        return new StillLifeReward();
+    }
+                            
+}
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

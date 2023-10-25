@@ -25,7 +25,7 @@
                 <div class="factory_block">
                     <div class="factory_block_folder">
                         <img class="factory_block_img" src="./img/folder-plus.svg" alt="fold">
-                        <a href="FactoryClasses.html"><h3>Classes</h3></a>                    
+                        <a href="FactoryClasses.html"><h3 class="factory_bl_title_fold" >classes</h3></a>                    
                     </div>
                     
                     
@@ -71,7 +71,8 @@ public class App {
 
         for(int i = 0; i < 20; i++){
             //int index = Math.abs(rnd.nextInt()%2)==0?0:1;
-            //int index = (int) (Math.random() * fabricaList.size());
+            //int index = (int) (Math.random() 
+                    * fabricaList.size());
             int index = rnd.nextInt(fabricaList.size());
             ItemFabrica fabrica = fabricaList.get(index);
             fabrica.openReward();
