@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registr</title>
+    <link rel="stylesheet" href="styleProduct.css">
+</head>
+
+<body>
+    <header class="sec1_header center">
+        <div class="sec1_head_img">
+            <a href="product.html">
+                <img class="sec1_hed_img_logo" src="./img/Group_2.svg" alt="img">
+            </a>
+            <a href="#"><img class="sec1_hed_img_search" src="./img/Forma_1.svg" alt="imgf"></a>
+        </div>
+        <nav class="sec1_hed_img_menu_block">
+            <a><img class="sec1_hed_img_menu" src="./img/Forma_11.svg" alt="img"></a>
+            <a class="ne_pokaz_v_mob" href="#"><img class="sec1_hed_img_profil" src="./img/Forma_12.svg"
+                    alt="img"></a>
+            <a class="ne_pokaz_v_mob" href="#"><img src="./img/Forma_13.svg" alt="img"></a>
+        </nav>
+
+    </header>
+    <section class="sec2_reg">
+        <h2 class="reg_title1"> Регистрации пользователей.</h2>
+        <h3 class="reg_title2"> Обязательные поля помечены*</h3>
+        <form action="#">            
+            <label for="name">Имя <em>*</em></label>
+            <input class="reg_pole1 reg_pole" id="name" type="text" placeholder="Имя" required autofocus><br>
+
+            <label for="email">Email <em>*</em></label>
+            <input class="reg_pole2 reg_pole" id="email" type="email" placeholder="Your@mail" required><br>
+
+            <label for="password">Password <em>*</em></label>
+            <input class="reg_pole3 reg_pole" id="password" type="password" required><br>
+
+            <label for="age">Возраст<em>*</em></label>
+            <input class="reg_pole4 reg_pole" id="age" type="number" min="1" required><br>
+
+            <label for="Дата_рождения">Дата рождения <em>*</em></label>
+            <input class="reg_pole5 reg_pole" id="Дата_рождения" type="date"><br>
+
+            <label for="telephone">Телефон <em>*</em></label>
+            <input class="reg_pole6 reg_pole" id="telephone" type="tel" required><br>
+        </form>
+        <div class="reg_button">
+            <button class="reg_but" type="submit"> Зарегистрироваться</button><br>
+        </div>
+    </section>
+
+</body>
+
+</html>

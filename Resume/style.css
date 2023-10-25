@@ -78,7 +78,6 @@ li::marker{
 }
 
 .content_right {  
-    /*background-color: rgb(50, 49, 92);  */
     width: 560px;
     height: 1000px;
     padding-left: 20px;
@@ -116,13 +115,11 @@ li::marker{
 .adres_text {
     color: var(--1, #e7e9ea);
 
-    /* Текст/12px, Regular */
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    /* 18px */
 
 }
 
@@ -141,13 +138,11 @@ li::marker{
 .phone_text {
     color: var(--1, #e7e9ea);
 
-    /* Текст/12px, Regular */
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    /* 18px */
 }
 
 .email {
@@ -171,7 +166,6 @@ li::marker{
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    /* 18px */
 }
 
 .content_about_me{
@@ -285,7 +279,6 @@ li::marker{
 .experience_title{
     color: var(--1, #070d10);
 
-    /* Текст/12px, Regular */
     font-family: Montserrat;
     font-size: 30px;
     font-style: normal;
@@ -313,7 +306,6 @@ li::marker{
 
     padding-top: 45px;
 }
-
 
 .skills_title{
     color: var(--1, #070d10);
@@ -344,16 +336,16 @@ li::marker{
     padding-top: 20px;
 }
 
-
+/*--------------------Portfolio-------------------------------*/
 .portfol_content{
-    background-color: #3f4c7a;
+    /*background-color: #3f4c7a;*/
     /* color: #070d10; */
     display: grid;
     grid-template-columns: repeat(2, 250px);
     /* padding: 100px; */
     /* gap: 25px; */
     height: 700px;
-    padding-top: 30px;
+    padding-top: 50px;
     justify-items: center;
     justify-content: center;
 
@@ -362,9 +354,11 @@ li::marker{
 .portfol_block{
     width: 200px;
     height: 100px;
-    background-color: forestgreen;
-    border: 1px solid #000;
+    background-color: #3f4c7a;
+    border: 7px solid #F16D7F;
     transition: transform 1s;
+
+    border-radius: 20px;
 
     display: flex;
     flex-wrap: wrap;
@@ -373,6 +367,190 @@ li::marker{
 
     
 }
+
+/*--------------------UiERD(пример Ui/ERD)----------------------*/
+.di{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.di_title{
+    color: var(--1, #070d10);
+
+    /* Текст/12px, Regular */
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+}
+.diagramm_block{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    padding-top: 40px;
+}
+.diagramm_title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.diagramm_text{
+    color: var(--1, #070d10);
+
+    /* Текст/12px, Regular */
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.diagramm_img{
+    width: 600px;
+
+    padding-top: 30px;
+}
+
+/*------------------------------Factory(фабричный метод)----------------------*/
+.factory_content{
+    display: flex;
+    justify-content: center;
+}
+.factory_block_img{
+width: 30px;
+}
+.factory_block_folder{
+    width: 300px;
+    height: 50px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+
+    border-radius: 20px 0px 0px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+.factory_block{
+    width: 300px;
+    height: 50px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+
+    border-radius: 20px 0px 0px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.factory_block_big{
+    width: 600px;
+    height: 700px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+
+    border-radius: 0px 20px 20px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.factory_bl_title{
+    color:#F16D7F ;
+}
+
+.factoryClasses_block1_big{
+    width: 600px;
+    height: 200px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+
+    border-radius: 0px 20px 20px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-left: 20px;
+}
+.factoryClasses_block2_big{
+    width: 600px;
+    height: 200px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+
+    border-radius: 0px 20px 20px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-left: 20px;
+}
+.factory_block_otstup{
+    width: 300px;
+    height: 50px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+
+    border-radius: 20px 0px 0px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin: 98px 0px;
+}
+.factory_block_strelka{
+    width: 100px;
+    height: 50px;
+    background-color: #3f4c7a;
+    border: 1px solid #F16D7F;
+    transition: transform 1s;
+
+    border-radius: 20px 0px 0px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.factory_block_block_strelka{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.strelka{
+    fill: #fff;
+    width: 40px;
+       
+}
+
 
 @media(max-width:900px){
 .content_right{
@@ -413,11 +591,24 @@ li::marker{
     .content_left{
         width: auto;;
     }
+    .portfol_content{
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    .diagramm_img{
+        width: 530px;
+    }
 }
-@media(max-width:425px){
+@media(max-width:570px){
     .header{
         height: 87px;
         display: grid;
         justify-items: center;
+    }
+    .diagramm_img{
+        width: 375px;
+    }
+    .di_title{
+        padding-left: 30px;
     }
 }

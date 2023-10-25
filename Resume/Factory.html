@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_link">
+            <a href="Index.html">Обо мне</a>
+            <a href="Portfol.html">Портфолио</a>
+        </div>
+        <h1 class="header_title">Java Developer</h1>
+        <div class="header_img">
+            <img class="header_img" src="./img/java-svgrepo-com.svg" alt="img">
+        </div>
+    </header>
+    <section>
+        <div class="factory_content">
+            <div class="factory_bl">
+                <div class="factory_block">
+                    <div class="factory_block_folder">
+                        <img class="factory_block_img" src="./img/folder-plus.svg" alt="fold">
+                        <a href="FactoryClasses.html"><h3>Classes</h3></a>                    
+                    </div>
+                    
+                    
+                </div>
+                <div class="factory_block">
+                    <h3 class="factory_bl_title">Main</h3>
+                </div>
+            </div>
+            <div class="factory_block_big">
+                <pre>
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
+
+import Classes.ItemFabrica;
+import Classes.Rewards.Gener.BodyArmorGenerator;
+import Classes.Rewards.Gener.DiamondGenerator;
+import Classes.Rewards.Gener.ExplosionGenerator;
+import Classes.Rewards.Gener.GemGenerator;
+import Classes.Rewards.Gener.GoldGenerator;
+import Classes.Rewards.Gener.SilverGenerator;
+import Classes.Rewards.Gener.StillLifeGenerator;
+import SinPattern.InitializedSingleton;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        ItemFabrica generator = new GoldGenerator();
+        generator.openReward();
+        generator = new GemGenerator();
+        generator.openReward();
+
+        Random rnd = ThreadLocalRandom.current();
+        List<ItemFabrica> fabricaList = new ArrayList<>();
+
+        fabricaList.add(new GemGenerator());
+        fabricaList.add(new GoldGenerator());
+        fabricaList.add(new StillLifeGenerator());
+        fabricaList.add(new BodyArmorGenerator());
+        fabricaList.add(new SilverGenerator());
+        fabricaList.add(new ExplosionGenerator());
+        fabricaList.add(new DiamondGenerator());
+
+        for(int i = 0; i < 20; i++){
+            //int index = Math.abs(rnd.nextInt()%2)==0?0:1;
+            //int index = (int) (Math.random() * fabricaList.size());
+            int index = rnd.nextInt(fabricaList.size());
+            ItemFabrica fabrica = fabricaList.get(index);
+            fabrica.openReward();
+        }
+
+        InitializedSingleton.getInstance();
+        InitializedSingleton.getInstance();
+    }
+}
+                </pre>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

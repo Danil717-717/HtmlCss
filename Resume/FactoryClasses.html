@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactoryClasses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_link">
+            <a href="Index.html">Обо мне</a>
+            <a href="Portfol.html">Портфолио</a>
+        </div>
+        <h1 class="header_title">Java Developer</h1>
+        <div class="header_img">
+            <img class="header_img" src="./img/java-svgrepo-com.svg" alt="img">
+        </div>
+    </header>
+    <section>
+        <div class="factory_content">
+            <div class="factory_bl">
+                <div class="factory_block_folder">
+                    <img class="factory_block_img" src="./img/folder-plus.svg" alt="fold">
+                    <a href="#"><h3>Revards</h3></a>                    
+                </div>
+                <div class="factory_block">
+                    <h3 class="factory_bl_title">ItemFabrica</h3>
+                </div>
+                <div class="factory_block_otstup">
+                    <h3 class="factory_bl_title">iGameItem</h3>
+                </div>
+                <div class="factory_block_block_strelka">
+                    <div class="factory_block_strelka">
+                        <a href="Factory.html"><img class="strelka" src="./img/iconmonstr-caret-left-circle-lined.svg" alt="hj"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="factoryClasses_block">
+                <div class="factoryClasses_block1_big">
+                    <pre>
+package Classes;
+
+public abstract class ItemFabrica {
+    public void openReward(){
+        iGameItem gameItem = createItem();
+        gameItem.open();
+    }
+                        
+    public abstract iGameItem createItem();
+                            
+}
+                    </pre>
+                </div>
+                <div class="factoryClasses_block2_big">
+                    <pre>
+package Classes;
+
+public interface iGameItem {
+     void open();
+}
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
