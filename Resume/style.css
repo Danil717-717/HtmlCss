@@ -628,7 +628,17 @@ li::marker {
 
 }
 /*--------------------------------MovingFigures(ghbvth Swing)-----------------------------*/
+.movingFig_img{
+    width: 300px;
+    border-radius: 7px;
+}
 
+.movingFig_block_img{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 .movingFig_block1_big{
     width: 600px;
     height: 200px;
@@ -1031,6 +1041,16 @@ li::marker {
 
     .factory_block_otstup {
         width: 100px;
+    }
+
+    .movingFig_block_img {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
     }
 
     .factoryClasses_block1_big {
